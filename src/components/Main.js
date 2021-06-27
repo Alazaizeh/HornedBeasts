@@ -32,9 +32,9 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <HornedBeasts beast={this.beasts[0]} />
-        <HornedBeasts beast={this.beasts[1]} />
-        <HornedBeasts beast={this.beasts[2]} />
+        {this.beasts.map((beast) => (
+          <HornedBeasts beast={beast} />
+        ))}
       </div>
     );
   }
