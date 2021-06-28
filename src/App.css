@@ -1,12 +1,3 @@
 .App {
   text-align: center;
 }
-
-.beast {
-  display: inline-block;
-  margin: 10px;
-}
-.beast img {
-  width: 350px;
-  height: 350px;
-}
