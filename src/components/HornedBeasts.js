@@ -17,19 +17,16 @@ class HornedBeasts extends Component {
     });
   };
 
+  selecit = () => {
+    this.props.showHorned(this.props.beast);
+  };
+
   render() {
     return (
-      // <div className="beast">
-      //   <h2>{this.props.beast.title}</h2>
-      //   <img
-      //     src={this.props.beast.image_url}
-      //     title={this.props.beast.title}
-      //     alt={this.props.beast.keyword}
-      //   ></img>
-      //   <p>{this.props.beast.description}</p>
-      // </div>
-
-      <Card style={{ width: "18rem", display: "inline-block" }}>
+      <Card
+        onClick={this.selecit}
+        style={{ width: "18rem", display: "inline-block" }}
+      >
         <Card.Img
           style={{ width: "18rem", height: "18rem" }}
           variant="top"
