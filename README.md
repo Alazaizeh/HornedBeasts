@@ -37,3 +37,17 @@ Finish time: 03:30
 Actual time needed to complete: 5 minutes
 
 ```
+### Feature #4: Display a Modal
+
+```
+Number and name of feature: #4 Display a Modal
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 01:00
+
+Finish time: 04:20
+
+Actual time needed to complete: 200 minutes
+
+```
