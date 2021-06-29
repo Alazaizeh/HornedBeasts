@@ -8,6 +8,7 @@ import SelectedBeast from "./components/SelectedBeast";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.child = React.createRef();
 
     this.state = {
       selectBeast: null,
@@ -15,11 +16,14 @@ class App extends Component {
   }
 
   showSelected = (selected) => {
-    console.log("called");
-    console.log(selected);
     this.setState({
-      selectBeast: <SelectedBeast show={true} beast={selected} />,
+      selectBeast: (
+        <SelectedBeast ref={this.child} show={true} beast={selected} />
+      ),
     });
+    setTimeout(() => {
+      this.child.current.on();
+    }, 1);
   };
 
   render() {

@@ -8,6 +8,7 @@ class HornedBeasts extends Component {
 
     this.state = {
       likes: 0,
+      selectBeast: null,
     };
   }
 
@@ -43,6 +44,7 @@ class HornedBeasts extends Component {
             Like{" "}
           </Button>
         </Card.Body>
+        {this.state.selectBeast}
       </Card>
     );
   }
