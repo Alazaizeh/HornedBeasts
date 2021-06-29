@@ -4,7 +4,7 @@
 // import { Button } from "react-bootstrap";
 
 // function SelectedBeast(props) {
-//   const [show, setShow] = useState(true);
+//   const [show, setShow] = useState(false);
 
 //   const handleClose = () => setShow(false);
 //   const handleShow = () => setShow(true);
@@ -57,7 +57,11 @@ class SelectedBeast extends Component {
       show: false,
     });
   };
-
+  on = () => {
+    this.setState({
+      show: true,
+    });
+  };
   render() {
     return (
       <>
