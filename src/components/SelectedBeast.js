@@ -74,7 +74,7 @@ class SelectedBeast extends Component {
               src={this.props.beast.image_url}
               title={this.props.beast.title}
               alt={this.props.beast.keyword}
-              style={{ width: "18rem", height: "18rem" }}
+              style={{ width: "28rem", height: "28rem" }}
             />
             <p>{this.props.beast.description}</p>
           </Modal.Body>{" "}

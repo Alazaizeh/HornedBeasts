@@ -24,11 +24,9 @@ class HornedBeasts extends Component {
 
   render() {
     return (
-      <Card
-        onClick={this.selecit}
-        style={{ width: "18rem", display: "inline-block" }}
-      >
+      <Card style={{ width: "18rem", display: "inline-block" }}>
         <Card.Img
+          onClick={this.selecit}
           style={{ width: "18rem", height: "18rem" }}
           variant="top"
           src={this.props.beast.image_url}
